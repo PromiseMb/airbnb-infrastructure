@@ -5,8 +5,8 @@ resource "aws_instance" "web" {
   ebs_optimized = true
 
   metadata_options {
-      http_endpoint = "enabled"
-      http_tokens   = "required"
+      http_endpoint = "disabled"
+      #http_tokens   = "required"
 }
 
   root_block_device {
